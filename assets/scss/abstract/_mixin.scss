@@ -1,0 +1,30 @@
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer; 
+    transition: 0.4s ease;
+
+    &:hover {
+        background-color: $text-color;
+        color: $bg-color;
+    }
+  }
+
+@mixin builder_box($buildimg){
+    background-image: $buildimg;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 33.333%;
+    height: 300px;
+    transition: transform 0.4s ease-in-out;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}

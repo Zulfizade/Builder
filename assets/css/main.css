@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.navbar a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+  transition: 0.3s ease;
+}
+.navbar a:hover {
+  color: #FAB700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 10%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.logo i {
+  font-size: 30px;
+  color: #FAB700;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 15px;
+}
+.navbar .active {
+  color: #FAB700;
+}
+
+.hamburger {
+  display: none;
+  font-size: 25px;
+}
+
+header {
+  background-image: url(https://preview.colorlib.com/theme/builder/img/banner/home-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  background-attachment: fixed;
+  align-content: center;
+}
+header h1 {
+  color: white;
+  font-size: 40px;
+}
+header span {
+  background-color: #FAB700;
+  color: rgb(72, 72, 72);
+  padding: 5px;
+  border-radius: 10px;
+}
+header .headText {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+header .headText p {
+  width: 30%;
+  color: white;
+}
+header .headText .btn {
+  background-color: rgb(72, 72, 72);
+  color: #FAB700;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+header .headText .btn:hover {
+  background-color: #FAB700;
+  color: rgb(72, 72, 72);
+}
+
+.titleText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 10%;
+}
+
+.service {
+  width: 30%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.4s ease;
+  gap: 20px;
+  cursor: pointer;
+}
+.service:hover {
+  box-shadow: 0px 0px 10px 1px;
+}
+.service p {
+  color: rgb(72, 72, 72);
+}
+
+.builder_area {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.builder_area .backitem {
+  display: none;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  cursor: pointer;
+  background-color: rgba(250, 183, 0, 0.6941176471);
+  position: absolute;
+  transition: all 0.4s ease;
+}
+
+.builder_item1 {
+  background-image: url(https://preview.colorlib.com/theme/builder/img/builder/builder-1.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 33.333%;
+  height: 300px;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.builder_item1:hover .backitem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.builder_item2 {
+  background-image: url(https://preview.colorlib.com/theme/builder/img/builder/builder-2.jpg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 33.333%;
+  height: 300px;
+  transition: transform 0.4s ease-in-out;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.builder_item2:hover .backitem {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.team_area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 60px 10%;
+}
+
+.team_item1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  max-width: 250px;
+}
+
+.team_item1 img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.4s ease;
+}
+
+.team_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 285px;
+  background-color: rgba(250, 183, 0, 0.6941176471);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.team_item1:hover img {
+  opacity: 0.3;
+}
+
+.team_item1:hover .team_back {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team_back a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.team_back a:hover {
+  transform: scale(1.2);
+  color: rgb(72, 72, 72);
+}
+
+.rate {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 10%;
+  background-color: #FAB700;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 60px 0;
+}
+
+.features {
+  display: flex;
+  margin: 60px 10%;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25%;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.feature h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.4s ease;
+}
+.feature h3:hover {
+  color: #FAB700;
+}
+.feature:hover {
+  box-shadow: 0 0 10px 1px;
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
