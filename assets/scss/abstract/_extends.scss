@@ -1,10 +1,10 @@
 %nav_a_box {
     text-decoration: none;
     cursor: pointer; 
-    color: $sub-color;
+    color: $sub-color; 
     transition: 0.3s ease;
 
-    &:hover {
+    &:hover { 
         color: $main-color;
     }
   }

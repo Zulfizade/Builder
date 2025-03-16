@@ -299,3 +299,172 @@ header .headText .btn:hover {
   border: none;
   background-color: rgb(242, 242, 242);
 }
+
+.testimonial_box {
+  width: 100%;
+  background-color: rgb(237, 238, 238);
+  padding: 60px 10%;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.testimonial {
+  width: 45%;
+  display: flex;
+  border: 1px solid rgb(72, 72, 72);
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border 0.6s ease, box-shadow 0.6s ease;
+}
+.testimonial:hover {
+  background-color: white;
+  border-color: transparent;
+  box-shadow: 0px 10px 30px 0px rgba(157, 157, 157, 0.2); /* Box shadow ekliyoruz */
+}
+
+.imgBox {
+  padding-top: 20px;
+  width: 19%;
+  text-align: center;
+}
+
+.aboutbox {
+  width: 81%;
+  padding: 20px;
+}
+.aboutbox p {
+  padding-bottom: 15px;
+  color: rgb(72, 72, 72);
+}
+.aboutbox h5 {
+  color: rgb(72, 72, 72);
+}
+
+.client_logos {
+  width: 100%;
+  height: 30vh;
+  margin: 60px 0;
+}
+
+.logos {
+  display: flex;
+  padding: 60px 10%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logos img {
+  opacity: 0.5;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.logos img:hover {
+  opacity: 1;
+}
+
+footer {
+  background-color: black;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  height: 60vh;
+}
+
+.up {
+  display: flex;
+  gap: 50px;
+  width: 80%;
+  height: 50%;
+}
+.up .aboutup {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.up .aboutup p {
+  font-size: 15px;
+  color: rgb(72, 72, 72);
+}
+.up .contactup {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  height: 100%;
+}
+.up .contactup p {
+  color: rgb(72, 72, 72);
+  margin: 20px 0;
+}
+.up .contactup a {
+  text-decoration: none;
+  color: #FAB700;
+  font-size: 25px;
+}
+.up .newsup {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.up p {
+  color: rgb(72, 72, 72);
+}
+.up form {
+  display: flex;
+  position: relative;
+}
+.up form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  padding: 20px 10px;
+  border: none;
+}
+.up form button {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  border-radius: 15px;
+  padding: 5px;
+  width: 60px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.up form button:hover {
+  background-color: #FAB700;
+}
+
+.bottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: rgb(72, 72, 72);
+}
+.bottom .left a {
+  text-decoration: none;
+  color: #FAB700;
+}
+.bottom .right {
+  display: flex;
+  gap: 20px;
+}
+.bottom .right a {
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(72, 72, 72);
+  transition: 0.4s ease;
+}
+.bottom .right a:hover {
+  color: #FAB700;
+}
